@@ -1,0 +1,595 @@
+/* Start General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    border: 1px solid #d4d1d1;
+    margin-top: 20px;
+}
+/* End General Styles */
+
+/* Start CSS to Hello Section */
+.hello {
+    padding: 15px 0;
+}
+.hello .dynamic-txt {
+    margin-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.hello .dynamic-txt li {
+    color: #999;
+    font-size: 20px;
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: slide 4s steps(3) infinite;
+    -webkit-animation: slide 4s steps(3) infinite;
+}
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -85px;
+    }
+}
+.hello .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hello .container .social li {
+    display: inline-block;
+}
+.hello .container .social li a i {
+    display: block;
+    color: #999;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.hello .container .social li:hover a i {
+    color: #40ba37;
+}
+/* End CSS to Hello Section */
+
+/* Start CSS to Header Section */
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+}
+header .container nav .logo-img {
+    width: 11%;
+}
+header .container nav .logo-img img {
+    width: 100%;
+}
+header .container nav .links {
+    width: 89%;
+    text-align: right;
+}
+header .container nav .links li {
+    display: inline-block;
+}
+header .container nav .links li a {
+    display: block;
+    padding: 7px 18px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+header .container nav .links li a.active,
+header .container nav .links li:hover a {
+    color: #fff;
+    background-color: #40ba37;
+    border-bottom: 3px solid #1c8314;
+}
+header .container nav .links li:last-child a {
+    padding-left: 150px;
+    color: #999;
+}
+header .container nav .links li:last-child:hover a {
+    color: #40ba37;
+    background-color: #fff;
+    border-bottom: none;
+}
+/* End CSS to Header Section */
+
+/* Start CSS to Home Section */
+.home {
+    margin: 110px 0 ;
+}
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .container .home-item {
+    width: 48%;
+    height: 255px;
+    position: relative;
+}
+.home .container .home-item .img img {
+    width: 100%;
+    height: 100%;
+}
+.home .container .home-item .img .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.6),rgba(0,0,0,0.2));
+}
+.home .container .home-item .img .layer h2 {
+    padding: 40px 30px 7px 30px;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 1.7px;
+}
+.home .container .home-item .img .layer span {
+    display: block;
+    padding: 0px 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.home .container .home-item .img .layer a {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 30px;
+    background-color:#40ba37;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-left: 3px solid #1c8314;
+    transition: border-left-color 0.5s , background-color 0.5s;
+    -webkit-transition: border-left-color 0.5s , background-color 0.5s;
+    -moz-transition: border-left-color 0.5s , background-color 0.5s;
+    -ms-transition: border-left-color 0.5s , background-color 0.5s;
+    -o-transition: border-left-color 0.5s , background-color 0.5s;
+}
+.home .container .home-item .img .layer a:hover {
+    border-left-color: #40ba37;
+    background-color: #1c8314;
+}
+/* End CSS to Home Section */
+
+/* Start CSS to Receipies Section */
+.receipies {
+    margin-bottom: 50px;
+}
+.receipies .container h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 30px;
+    letter-spacing: 1.7px;
+}
+.receipies .container .recep-content {
+    display: flex;
+    justify-content: space-between;
+}
+.receipies .container .recep-content .recep-item {
+    width: 30%;
+    margin-bottom: 40px;
+}
+.receipies .container .recep-content .recep-item .img img {
+    width: 100%;
+    border-bottom: 3px solid #1c8314;
+}
+.receipies .container .recep-content .recep-item h3 {
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.receipies .container .recep-content .recep-item h3:hover {
+    color: #40ba37;
+}
+.receipies .container .recep-content .recep-item .stars {
+    text-align: center;
+}
+.receipies .container .recep-content .recep-item .stars li {
+    display: inline-block;
+}
+.receipies .container .recep-content .recep-item .stars li i {
+    font-size: 15px;
+    color: #fbb710;
+}
+/* End CSS to Receipies Section */
+
+/* Start CSS to Free Section */
+.free {
+    background-image: url(../images/bg4.jpg.webp);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 80px;
+}
+.free .container .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.free .container .layer .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.free .container .layer .content h2 {
+    color: #fff;
+    font-size: 70px;
+    letter-spacing: 1.7px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.free .container .layer .content p {
+    color: #fff;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+.free .container .layer .content button {
+    width: 280px;
+    height: 65px;
+    background-color: #40ba37;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-left: 3px solid #1c8314;
+    transition: border-left-color 0.5s , background-color 0.5s;
+    -webkit-transition: border-left-color 0.5s , background-color 0.5s;
+    -moz-transition: border-left-color 0.5s , background-color 0.5s;
+    -ms-transition: border-left-color 0.5s , background-color 0.5s;
+    -o-transition: border-left-color 0.5s , background-color 0.5s;
+}
+.free .container .layer .content button:hover {
+    border-left-color: #40ba37;
+    background-color: #1c8314;
+}
+/* End CSS to Free Section */
+
+/* Start CSS to Menu Section */
+.menu {
+    margin-bottom: 80px;
+}
+.menu .container .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .container .menu-content .menu-item {
+    width: 30%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .container .menu-content .menu-item .menu-img {
+    width: 32%;
+}
+.menu .container .menu-content .menu-item .menu-img img {
+    width: 100%;
+}
+.menu .container .menu-content .menu-item .text {
+    width: 65%;
+    padding-top: 5px;
+}
+.menu .container .menu-content .menu-item .text span:first-child {
+    color: #40ba37;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 3px;
+}
+.menu .container .menu-content .menu-item .text h3 {
+    font-size: 18px;
+    color: #474747;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: color 0.5s;
+    -webkit-transition:color 0.5s;
+    -moz-transition:color 0.5s;
+    -ms-transition:color 0.5s;
+    -o-transition:color 0.5s;
+}
+.menu .container .menu-content .menu-item .text h3:hover {
+    color: #40ba37;
+}
+.menu .container .menu-content .menu-item .text .stars {
+    margin-bottom: 7px;
+}
+.menu .container .menu-content .menu-item .text .stars li {
+    display: inline-block;
+}
+.menu .container .menu-content .menu-item .text .stars li i {
+    font-size: 15px;
+    color: #fbb710;
+}
+.menu .container .menu-content .menu-item .text span:last-child {
+    color: #8f8e8e;
+    font-size: 15px;
+    display: block;
+}
+/* End CSS to Menu Section */
+
+/* Start CSS to Subscribe Section */
+.subscribe {
+    margin-bottom: 80px;
+}
+.subscribe .container .sub-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe .container .sub-content .sub-item {
+    width: 32%;
+    height: 480px;
+}
+.subscribe .container .sub-content .sub-item:first-child {
+    border: 10px solid #40ba37;
+    padding: 30px;
+    text-align: center;
+}
+.subscribe .container .sub-content .sub-item:first-child span:first-child {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 15px;
+    color: #40ba37;
+    font-style: italic;
+}
+.subscribe .container .sub-content .sub-item:first-child h4 {
+    color: #474747;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+.subscribe .container .sub-content .sub-item:first-child span:last-of-type {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 50px;
+    color: #474747;
+}
+.subscribe .container .sub-content .sub-item:first-child .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe .container .sub-content .sub-item:first-child .list li {
+    font-size: 13px
+}
+.subscribe .container .sub-content .sub-item:first-child .list li:first-child {
+    color: #40ba37;
+}
+.subscribe .container .sub-content .sub-item:first-child .list li:last-child {
+    color: #8f8e8e;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) h3 {
+    text-align: center;
+    color: #474747;
+    font-size: 22px;
+    letter-spacing: 1.4px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img {
+    background-image: url(../images/bg1.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 388px;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer form {
+    padding: 30px 20px 10px 20px;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer form input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    border: none;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer form input:first-child {
+    padding: 0 20px;
+    font-style: italic;
+    border-left: 3px solid #1c8314;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer form input:last-child {
+    border-left: 3px solid #1c8314;
+    background-color: #40ba37;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition:border-left-color 0.5s , background-color 0.5s;
+    -webkit-transition:border-left-color 0.5s , background-color 0.5s;
+    -moz-transition:border-left-color 0.5s , background-color 0.5s;
+    -ms-transition:border-left-color 0.5s , background-color 0.5s;
+    -o-transition:border-left-color 0.5s , background-color 0.5s;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer form input:last-child:hover {
+    border-left-color:  #40ba37;
+    background-color: #1c8314;
+}
+.subscribe .container .sub-content .sub-item:nth-child(2) .sub-img .layer p{
+    color: #fff;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 2.2;
+    padding: 0px 20px;
+}
+.subscribe .container .sub-content .sub-item:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+}
+/* End CSS to Subscribe Section */
+
+/* Start CSS to Footer Section */
+footer {
+    padding: 35px ;
+}
+footer .container h3 {
+    font-weight: 100;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+footer .content {
+    display: flex;
+}
+footer .footer-img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+footer .footer-img img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+footer .footer-img:hover img {
+    transform: scale(1.4) rotate(10deg);
+    -webkit-transform: scale(1.4) rotate(10deg);
+    -moz-transform: scale(1.4) rotate(10deg);
+    -ms-transform: scale(1.4) rotate(10deg);
+    -o-transform: scale(1.4) rotate(10deg);
+}
+footer .footer-img .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 186, 55,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s , visibility 0.5s;
+    -webkit-transition: opacity 0.5s , visibility 0.5s;
+    -moz-transition: opacity 0.5s , visibility 0.5s;
+    -ms-transition: opacity 0.5s , visibility 0.5s;
+    -o-transition: opacity 0.5s , visibility 0.5s;
+}
+footer .footer-img:hover .layer {
+    opacity: 1;
+    visibility: visible; 
+}
+footer .footer-img:hover .layer i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 22px;
+}
+footer .bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .bottom .container .social li {
+    display: inline-block;
+}
+footer .bottom .container .social li a i {
+    display: block;
+    color: #999;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+footer .bottom .container .social li:hover a i {
+    color: #40ba37;
+}
+footer .bottom .container .copyright {
+    font-size: 14px;
+    text-align: right;
+    font-weight: 500;
+    color: #474747;
+}
+footer .bottom .container .copyright span {
+    cursor: pointer;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+footer .bottom .container .copyright span:hover {
+    color: #40ba37;
+}
+/* End CSS to Footer Section */
