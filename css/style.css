@@ -213,7 +213,7 @@ header .container nav .search #search {
     font-size: 23px;
     cursor: pointer;
     border: none;
-    background-image: linear-gradient(to top left , rgb(176, 176, 221),rgb(143, 211, 143));
+    background-image: linear-gradient(to top left , rgb(131, 131, 207),rgb(114, 197, 114));
     color: #0e406e;
     border-radius: 50%;
     -webkit-border-radius: 50%;
