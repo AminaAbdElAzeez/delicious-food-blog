@@ -27,7 +27,6 @@
                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </div>
-        <hr/>
     </section>
     <!-- End Hello Section -->
 
@@ -39,14 +38,17 @@
                     <img src="images/logo.png (1).webp" alt="Logo">
                 </div>
                 <ul class="links">
-                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">home</a></li>
                     <li><a href="#">pages</a></li>
                     <li><a href="#">maga menu</a></li>
                     <li><a href="#">receipies</a></li>
                     <li><a href="#">4 vegans</a></li>
                     <li><a href="#">contact</a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
+                <div class="search">
+                    <input type="search" placeholder="Search..." id="search"/>
+                    <a href="#" id="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
             </nav>
         </div>
     </header>
@@ -54,28 +56,46 @@
 
     <!-- Start Home Section -->
     <section class="home">
+        <div id="sidebar">
+            <button id="open"><i class="fa-solid fa-angles-right"></i></button>
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="list">
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i>About</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i>Pages</a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i>Blog</a></li>
+                <li><a href="#"><i class="fa-solid fa-comment"></i>Contact</a></li>
+            </ul>
+        </div>
         <div class="container">
             <div class="home-item">
                 <div class="img">
                     <img src="images/bg2.jpg.webp" alt="Home Images">
+                    <div class="overlay">
+                        <img src="images/bg2.jpg.webp" alt="Home Images">
+                    </div>
                     <div class="layer">
                         <h2>Strawberry Cake</h2>
                         <span>Simple & Delicios</span>
-                        <a href="#">See Full Receipe</a>
+                        <a href="#" class="btn-effect">See Full Receipe</a>
                     </div>
                 </div>
             </div>
             <div class="home-item">
                 <div class="img">
                     <img src="images/bg3.jpg.webp" alt="Home Images">
+                    <div class="overlay">
+                        <img src="images/bg3.jpg.webp" alt="Home Images">
+                    </div>
                     <div class="layer">
-                        <h2>Chinesse Noodles</h2>
+                        <h2>Strawberry Cake</h2>
                         <span>Simple & Delicios</span>
-                        <a href="#">See Full Receipe</a>
+                        <a href="#" class="btn-effect">See Full Receipe</a>
                     </div>
                 </div>
             </div>
         </div>
+        <button id="top"><i class="fa-solid fa-angles-up"></i></button>
     </section>
     <!-- End Home Section -->
 
@@ -83,45 +103,70 @@
     <section class="receipies">
         <div class="container">
             <h2>The best Receipies</h2>
+            <span class="line"></span>
             <div class="recep-content">
                 <div class="recep-item">
                     <div class="img">
                         <img src="images/r1.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="recep-item">
                     <div class="img">
                         <img src="images/r2.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="recep-item">
                     <div class="img">
                         <img src="images/r3.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="recep-content">
@@ -129,40 +174,64 @@
                     <div class="img">
                         <img src="images/r4.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="recep-item">
                     <div class="img">
                         <img src="images/r5.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="recep-item">
                     <div class="img">
                         <img src="images/r6.jpg.webp" alt="Receipies">
                     </div>
-                    <h3>Sushi Easy Receipy</h3>
-                    <ul class="stars">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-regular fa-star"></i></li>
-                    </ul>
+                    <div class="text-box">
+                        <h3>Sushi Easy Receipy</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-regular fa-eye"></i></li>
+                            <li><i class="fa-solid fa-cart-plus"></i></li>
+                            <li><i class="fa-solid fa-list"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -357,7 +426,7 @@
     <section class="subscribe">
         <div class="container">
             <div class="sub-content">
-                <div class="sub-item">
+                <div class="sub-item tb-effect">
                     <span>"</span>
                     <h4>
                         Nothing is better than going home to family and eating good food and relaxing
@@ -371,7 +440,6 @@
                 <div class="sub-item">
                     <h3>Subscribe to our newsletter</h3>
                     <div class="sub-img">
-                        <!-- <img src="images/bg1.jpg.webp" alt="Subscribe"> -->
                         <div class="layer">
                             <form action="#">
                                 <input type="text" placeholder="Subscribe to newsletter">
@@ -386,7 +454,14 @@
                     </div>
                 </div>
                 <div class="sub-item">
-                    <img src="images/add.png.webp" alt="Subscribe">
+                    <div class="box">
+                        <h4>out now</h4>
+                        <h3>the burger cook book</h3>
+                        <p>
+                            fusce nec vitae lacus aliquet vulputate. donec scelerisque accumsan molestie.
+                        </p>
+                        <div class="layer-box">special price</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -394,75 +469,82 @@
     <!-- End Subscribe Section -->
     <hr/>
 
+    <!-- Start Follow Section -->
+    <section class="follow">
+        <div class="container">
+            <h3>Follow Us Instragram</h3>
+            <span class="line"></span>
+            <div class="content">
+                <div class="follow-img">
+                    <img src="images/insta1.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta2.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta3.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta4.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta5.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta6.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="follow-img">
+                    <img src="images/insta7.jpg.webp" alt="Follow">
+                    <div class="layer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Follow Section -->
+
     <!-- Start Footer Section -->
     <footer>
         <div class="container">
-            <h3>Follow Us Instragram</h3>
-        </div>
-        <div class="content">
-            <div class="footer-img">
-                <img src="images/insta1.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
+            <ul class="social">
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+            <div class="logo-img">
+                <img src="images/logo.png (1).webp" alt="Logo">
             </div>
-            <div class="footer-img">
-                <img src="images/insta2.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div class="footer-img">
-                <img src="images/insta3.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div class="footer-img">
-                <img src="images/insta4.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div class="footer-img">
-                <img src="images/insta5.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div class="footer-img">
-                <img src="images/insta6.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div class="footer-img">
-                <img src="images/insta7.jpg.webp" alt="Footer">
-                <div class="layer">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="container">
-                <ul class="social">
-                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-                <div class="logo-img">
-                    <img src="images/logo.png (1).webp" alt="Logo">
-                </div>
-                <p class="copyright">
-                    Copyright &copy;2023 All rights reserved | This template is made with 
-                    <i class="fa-regular fa-heart"></i> by <span>Colorlib</span>
-                </p>
-            </div>
+            <p class="copyright">
+                Copyright &copy;2023 All rights reserved | This template is made with 
+                <i class="fa-regular fa-heart"></i> by <span>Colorlib</span>
+            </p>
         </div>
     </footer>
     <!-- End Footer Section -->
+
+    <!-- JS Files -->
+    <script src="js/script.js"></script>
 </body>
 </html>
