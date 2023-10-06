@@ -14,7 +14,7 @@ close.onclick = function(){
 }
 
 window.onscroll = function(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (scrollY > 30) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
@@ -22,8 +22,10 @@ window.onscroll = function(){
 }
 
 topBtn.onclick = function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top : 0 ,
+        behavior : "smooth"
+    })
 }
 
 iconSearch.onclick = function(){
